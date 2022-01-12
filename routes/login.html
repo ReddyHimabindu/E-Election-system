@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Election System - login</title>
+    <link rel="stylesheet" href="/css/stylesheet.css">
+</head>
+<center>
+
+    <body>
+        <div id="headersection">
+            <h1>E-ELECTION SYSTEM</h1>
+        </div>
+        <hr color="green">
+
+        <div id="bodysection">
+            <form action="/api/login.php" method="POST">
+                <h1>
+                    LOGIN
+                </h1><br><br>
+                <input type="number" name="mobile" placeholder="Enter mobile" required><br><br><br>
+                <input type="password" name="password" placeholder="Enter password" required><br><br><br>
+                <select id="dropbox" name="role">
+                    <!--</select>style="width: 15%; border: 2px solid black">-->
+                <option value="1">Voter</option>
+                <option value="2">Group</option>
+                </select><br><br><br>
+                <button id="loginbtn">Login</button><br><br><br>
+                <h2> New user? <a href="/routes/register.html">Register here</a></h2>
+            </form>
+
+        </div>
+    </body>
+</center>
+
+
+
+</html>

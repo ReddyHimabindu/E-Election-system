@@ -1,0 +1,48 @@
+body {
+    text-align: center;
+    background-color: #fdcb6e;
+}
+
+#headersection {
+    padding: 10px;
+}
+
+#headersection {
+    font-family: cursive;
+}
+
+input {
+    padding: 10px;
+    border-radius: 12px;
+    border-width: 3px;
+    width: 15%;
+}
+
+#dropbox {
+    padding: 10px;
+    border-radius: 5px;
+    width: 10%;
+}
+
+#loginbtn {
+    padding: 5px;
+    font-size: 15px;
+    border-radius: 5px;
+    background-color: #00a8ff;
+    color: white;
+}
+
+#registerbtn {
+    padding: 5px;
+    font-size: 15px;
+    border-radius: 5px;
+    background-color: #00a8ff;
+    color: white;
+}
+
+#role {
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 10px;
+    width: 30%;
+}

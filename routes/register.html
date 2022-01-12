@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Election system - Registration</title>
+    <link rel="stylesheet" href="/css/stylesheet.css">
+</head>
+
+
+<body>
+    <style>
+        #imagepart {
+            border: 2px solid black;
+            border-radius: 5px;
+            padding: 10px;
+            width: 30%;
+        }
+        
+        #role select {
+            padding: 10px;
+            border-radius: 5px;
+        }
+    </style>
+    <center>
+        <div id="headersection">
+            <h1>E-ELECTION SYSTEM</h1>
+        </div>
+        <hr color="green">
+        <div id="bodysection">
+            <h2>REGISTRARTION</h2><br>
+            <form action="/api/register.php" method="post" enctype="multipart/form-data">
+                <input type="text" name="name" placeholder="Enter name" required>&nbsp;
+                <input type="number" name="mobile" placeholder="Enter mobile number" required><br><br>
+                <input type="password" name="password" placeholder="Password" required>&nbsp;
+                <input type="password" name="cpassword" placeholder="Confirm Password" required><br><br>
+                <input type="number" name="Adhar" placeholder="Adhar number" required>&nbsp;
+                <input type="date" name="DOB" required><br><br>
+                <input style="width: 30%; border: 3px solid black" type="text" name="address" placeholder="Address" required><br><br>
+                <center>
+                    <div id="imagepart">
+                        Upload image: <input type="file" id="profile" name="image" required>
+                    </div>
+                    <br>
+                    <div id="role">
+                        Select your role:<select name="role">
+                            <option value="1">Voter</option>
+                            <option value="2">Group</option>
+                        </select>
+                    </div>
+                </center>
+                <br><br>
+                <button id="registerbtn">Register</button><br><br>
+                <h2>Already user? <a href="/routes/login.html">Login here</a></h2>
+            </form>
+        </div>
+
+</body>
+</center>
+
+
+
+</html>
